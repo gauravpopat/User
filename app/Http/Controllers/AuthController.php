@@ -62,7 +62,7 @@ class AuthController extends Controller
         $searchable_fields = ['name','email','created_at'];
         $data = $this->filterSearchPagination($query,$searchable_fields);
         return ok('User Data',[
-            'users'=>$data['query']->paginate($request->perpage),
+            'users'=>$data['query']->get(),
             'count'=>$data['count']
         ]);
     }
