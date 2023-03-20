@@ -13,6 +13,6 @@ class UserController extends Controller
     public function show()
     {
         $user = auth()->user();
-        return ok('User',$user);
+        return ok('User Detail',$user);
     }
 }

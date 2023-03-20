@@ -53,12 +53,8 @@ class AuthController extends Controller
         }
     }
 
-    // public function userlist()
-    // {
-    //     $user = User::paginate(10);
-    //     return ok('User',$user);
-    // }
-
+   
+    //List of users from users table: For pagination practice
     public function userlist(Request $request)
     {       
         $this->ListingValidation();
